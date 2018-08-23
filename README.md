@@ -15,8 +15,15 @@ Swords are your most popular item. Swords with lots of magic are highly sought a
 - A sword can be sold for 2x its magic level
 
 ### Task 2
-Every now and then you get a batch of second hand swords, mostly scavanged from those adventurers who don't survive the dragon gauntlets. These swords have already lost some magic. As they have already got adventurer sweat on them, they are worth less than fresh swords.
+Every now and then you get a batch of second hand swords, mostly scavanged from those adventurers who didn't survive the dragon gauntlets. These swords have already lost some magic. As they have already got adventurer sweat on them, they are worth less than fresh swords.
 
-- Second hand swords start with 25 magic
+- Second hand swords have 25 magic
 - Every time the clock strikes midnight, the swords lose 5 magic
 - A second hand sword can be sold for 1x its magic level
+
+### Task 3
+Some adventurers are better than others. Some manage to get some dragon blood on their sword before they get burnt to a crisp. Once dragon blood touches a sword, those swords don't lose any more magic. As such they can carry a hefty price.
+
+- Second hand swords with dragon blood on them lose 0 magic each day
+- Second hand swords with dragon blood can have anywhere between 25-50 magic
+- Second hand swords with dragon blood can be sold for 3x their magic level
