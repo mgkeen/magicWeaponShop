@@ -62,5 +62,27 @@ namespace MagicWeaponShop.Tests
 
             Assert.Equal(25, sword.Price);
         }
+
+        [Fact]
+        public void Second_hand_swords_with_dragon_blood_dont_lose_magic_each_day()
+        {
+            var startingMagicAmount = 40;
+            var sword = Sword.DragonBloodSword(startingMagicAmount);
+
+            sword.MidnightStrikes();
+
+            Assert.Equal(startingMagicAmount, sword.MagicAmount);
+        }
+
+        [Fact]
+        public void Second_hand_sowrds_with_dragon_blood_are_worth_3_times_their_magic_amount()
+        {
+            var startingMagicAmount = 40;
+            var sword = Sword.DragonBloodSword(startingMagicAmount);
+
+            sword.MidnightStrikes();
+
+            Assert.Equal(startingMagicAmount * 3, sword.Price);
+        }
     }
 }

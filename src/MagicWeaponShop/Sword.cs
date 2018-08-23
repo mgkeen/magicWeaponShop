@@ -9,10 +9,12 @@ namespace MagicWeaponShop
     public class Sword
     {
         private readonly int _priceMultiplier;
+        private readonly int _magicLossRate;
 
-        internal Sword(int startingMagicAmount, int priceMultiplier)
+        internal Sword(int startingMagicAmount, int priceMultiplier, int magicLossRate)
         {
             _priceMultiplier = priceMultiplier;
+            _magicLossRate = magicLossRate;
             MagicAmount = startingMagicAmount;
         }
 
@@ -21,17 +23,22 @@ namespace MagicWeaponShop
 
         public void MidnightStrikes()
         {
-            MagicAmount = MagicAmount - 5;
+            MagicAmount = MagicAmount - _magicLossRate;
         }
 
         public static Sword NewSword()
         {
-            return new Sword(50, 2);
+            return new Sword(50, 2, 5);
         }
 
         public static Sword SecondHandSword()
         {
-            return new Sword(25, 1);
+            return new Sword(25, 1, 5);
+        }
+
+        public static Sword DragonBloodSword(int startingMagicAmount)
+        {
+            return new Sword(startingMagicAmount, 3, 0);
         }
     }
 }
