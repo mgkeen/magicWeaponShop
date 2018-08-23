@@ -1,5 +1,5 @@
 # Magic Weapon Shop
-A kata designed to encourage writing flexible tests. You are encouraged to not read ahead and tackle each task in order. A starting point is provided in C#, but feel free to follow the kata in whatever language you choose.
+A kata designed to encourage writing flexible tests. The aim is to have a full test suite which changes as little as possible as later tasks are implemented. You are encouraged to not read ahead and tackle each task in order. A starting point is provided in C#, but feel free to follow the kata in whatever language you choose.
 
 ## Introduction
 You own a shop selling magical weapons to passing adventurers on their way to the dragon gauntlets.
@@ -36,4 +36,3 @@ Some adventurers lack the finesse a sword requires. These adventurers prefer fla
 - Flails cost 25 + their magic level
 - There is no discount for second hand flails, 
 - Flails with dragon blood gain 2 magic per day
-- Second hand flails have a magic level according to their age (1 magic per day until dragon blood, then 2)
