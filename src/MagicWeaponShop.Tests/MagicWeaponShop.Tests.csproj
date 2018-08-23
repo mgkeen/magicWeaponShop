@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FlailTests.cs" />
     <Compile Include="SwordTests.cs" />
     <Compile Include="TruthTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

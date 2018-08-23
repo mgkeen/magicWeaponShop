@@ -8,37 +8,25 @@ namespace MagicWeaponShop
 {
     public class Sword
     {
-        private readonly int _priceMultiplier;
-        private readonly int _magicLossRate;
-
-        internal Sword(int startingMagicAmount, int priceMultiplier, int magicLossRate)
+        public static MagicWeapon NewSword()
         {
-            _priceMultiplier = priceMultiplier;
-            _magicLossRate = magicLossRate;
-            MagicAmount = startingMagicAmount;
+            var priceStrategy = new MultiplierPriceCalculator(2);
+            var midnightStrategy = new AdditiveMidnightStrategy(-5);
+            return new MagicWeapon(50, midnightStrategy, priceStrategy);
         }
 
-        public int MagicAmount { get; private set; }
-        public int Price => MagicAmount * _priceMultiplier;
-
-        public void MidnightStrikes()
+        public static MagicWeapon SecondHandSword()
         {
-            MagicAmount = MagicAmount - _magicLossRate;
+            var priceStrategy = new MultiplierPriceCalculator(1);
+            var midnightStrategy = new AdditiveMidnightStrategy(-5);
+            return new MagicWeapon(25, midnightStrategy, priceStrategy);
         }
 
-        public static Sword NewSword()
+        public static MagicWeapon DragonBloodSword(int startingMagicAmount)
         {
-            return new Sword(50, 2, 5);
-        }
-
-        public static Sword SecondHandSword()
-        {
-            return new Sword(25, 1, 5);
-        }
-
-        public static Sword DragonBloodSword(int startingMagicAmount)
-        {
-            return new Sword(startingMagicAmount, 3, 0);
+            var priceStrategy = new MultiplierPriceCalculator(3);
+            var midnightStrategy = new AdditiveMidnightStrategy(0);
+            return new MagicWeapon(startingMagicAmount, midnightStrategy, priceStrategy);
         }
     }
 }
