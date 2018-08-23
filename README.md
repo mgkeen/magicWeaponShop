@@ -13,3 +13,10 @@ Swords are your most popular item. Swords with lots of magic are highly sought a
 - Fresh swords start with 50 magic
 - Every time the clock strikes midnight, the swords lose 5 magic
 - A sword can be sold for 2x its magic level
+
+### Task 2
+Every now and then you get a batch of second hand swords, mostly scavanged from those adventurers who don't survive the dragon gauntlets. These swords have already lost some magic. As they have already got adventurer sweat on them, they are worth less than fresh swords.
+
+- Second hand swords start with 25 magic
+- Every time the clock strikes midnight, the swords lose 5 magic
+- A second hand sword can be sold for 1x its magic level
