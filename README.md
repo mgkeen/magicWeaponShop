@@ -36,3 +36,4 @@ Some adventurers lack the finesse a sword requires. These adventurers prefer fla
 - Flails cost 25 + their magic level
 - There is no discount for second hand flails, 
 - Flails with dragon blood gain 2 magic per day
+- Flails with dragon blood cost 50 + their magic level
