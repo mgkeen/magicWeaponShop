@@ -27,3 +27,12 @@ Some adventurers are better than others. Some manage to get some dragon blood on
 - Second hand swords with dragon blood on them lose 0 magic each day
 - Second hand swords with dragon blood can have anywhere between 25-50 magic
 - Second hand swords with dragon blood can be sold for 3x their magic level
+
+### Task 4
+Some adventurers lack the finesse a sword requires. These adventurers prefer flailing around with a flail. Flails have quite different properties to swords.
+
+- Fresh flails have 0 magic
+- Each day a flail gains 1 magic
+- Flails cost 25 + their magic level
+- There is no discount for second hand flails
+- Flails with dragon blood gain 2 magic per day
