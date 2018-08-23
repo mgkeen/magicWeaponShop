@@ -34,5 +34,6 @@ Some adventurers lack the finesse a sword requires. These adventurers prefer fla
 - Fresh flails have 0 magic
 - Each day a flail gains 1 magic
 - Flails cost 25 + their magic level
-- There is no discount for second hand flails
+- There is no discount for second hand flails, 
 - Flails with dragon blood gain 2 magic per day
+- Second hand flails have a magic level according to their age (1 magic per day until dragon blood, then 2)
